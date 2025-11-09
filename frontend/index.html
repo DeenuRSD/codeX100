@@ -3,312 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>codeX100 - Learn Programming</title>
-
+    <title>Red Wingss Techverse | Appointment Booking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-      /* General Styles */
-      body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      /* Navigation Bar */
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #333;
-        padding: 15px;
-        color: white;
-      }
-
-      .navbar .logo img {
-        height: 50px;
-      }
-
-      .nav-links {
-        list-style: none;
-        display: flex;
-      }
-
-      .nav-links li {
-        margin: 0 15px;
-      }
-
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      .nav-links a:hover {
-        color: #61dafb;
-      }
-
-      .btn {
-        padding: 10px 20px;
-        border: none;
-        background-color: #61dafb;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .btn:hover {
-        background-color: #4db8e6;
-      }
-
-      /* Hero Section */
-      .hero-section {
-        text-align: center;
-        padding: 100px 20px;
-        background-color: #f4f4f4;
-      }
-
-      /* Course Recommendations Section */
-      .course-recommendations {
-        padding: 40px 20px;
-        text-align: center;
-      }
-
-      .recommended-courses {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .course-card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        margin: 10px;
-        overflow: hidden;
-        width: 250px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .course-thumbnail {
-        width: 100%;
-        height: auto;
-      }
-
-      .course-info {
-        padding: 15px;
-      }
-
-      .btn-secondary {
-        background-color: #61dafb;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .btn-secondary:hover {
-        background-color: #4db8e6;
-      }
-
-      /* Search Bar */
-      .search-container {
-        margin: 20px 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      .search-container input {
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        width: 300px;
-        margin-right: 10px;
-      }
-
-      .search-container button {
-        padding: 10px 15px;
-        border: none;
-        background-color: #61dafb;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      .search-container button:hover {
-        background-color: #4db8e6;
-      }
-
-      /* Footer */
-      .site-footer {
-        background-color: #282c34;
-        color: white;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .footer-container {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .footer-section {
-        flex: 1;
-        margin: 0 20px;
-      }
-
-      .footer-section h3 {
-        margin-bottom: 20px;
-      }
-
-      .footer-section ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .footer-section ul li {
-        margin: 10px 0;
-      }
-
-      .footer-section ul li a {
-        color: #61dafb;
-        text-decoration: none;
-      }
-
-      .footer-section ul li a:hover {
-        text-decoration: underline;
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: flex-start;
-      }
-
-      .social-icon {
-        color: white;
-        margin-right: 15px;
-        font-size: 24px;
-      }
-
-      .footer-bottom {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      /* Responsive styles */
-      @media (max-width: 768px) {
-        .footer-container {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .footer-section {
-          margin: 10px 0;
-        }
-
-        .recommended-courses {
-          flex-direction: column;
-        }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TCTm4NU6pIC3ePeZ3d0ZLdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="./Images/codex100-logo.png" alt="codeX100 logo" />
+    <header>
+      <nav class="navbar">
+        <a class="nav-brand" href="#home">
+          <img src="Images/red-wingss-techverse-logo.svg" alt="Red Wingss Techverse logo" />
+          <span>Red Wingss Techverse</span>
         </a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="course.html">Courses</a></li>
-        <li><a href="#">Notes</a></li>
-        <li><a href="IDE.html">IDE</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#" class="btn">Sign Up</a></li>
-        <li><a href="#" class="btn">Login</a></li>
-      </ul>
-    </nav>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#schedule">Availability</a></li>
+          <li><a href="#appointment">Book a Meeting</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Main Section -->
-    <section class="hero-section">
-      <h2>Welcome to codeX100</h2>
-      <p>Master programming with live classes and curated content</p>
-      <a href="#" class="btn-primary">Explore Courses</a>
-    </section>
-
-    <!-- Course Recommendations Section -->
-    <section class="course-recommendations">
-      <h2>Your Courses</h2>
-      <div class="course-list">
-        <p>You haven't bought any courses yet.</p>
-      </div>
-
-      <h3>Recommended Courses</h3>
-      <div class="search-container">
-        <input type="text" placeholder="Search Notes..." />
-        <button>Search</button>
-      </div>
-      <div class="recommended-courses">
-        <div class="course-card">
-          <img src="./Images/c++-thumbnail.jpg" alt="Basics of C++" class="course-thumbnail" />
-          <div class="course-info">
-            <h4>Basics of C++</h4>
-            <p>Learn the fundamentals of C++ programming.</p>
-            <button class="btn-secondary">View Course</button>
-          </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <span class="tagline">24/7 Expertise · Meetings Weekdays 10:00-16:00</span>
+          <h1>Schedule a Consultation with Our Enterprise Software Team</h1>
+          <p>
+            Red Wingss Techverse helps ambitious businesses modernise, automate, and scale with robust digital solutions.
+            Book a strategy session and let our experts craft your path from idea to implementation.
+          </p>
+          <a class="cta-button" href="#appointment">
+            <i class="fas fa-calendar-check"></i>
+            Book Your Meeting Now
+          </a>
         </div>
-        <div class="course-card">
-          <img src="./Images/java-thumbnail.jpg" alt="Data Structures in Java" class="course-thumbnail" />
-          <div class="course-info">
-            <h4>Data Structures in Java</h4>
-            <p>Master DSA with Java from basics to advanced.</p>
-            <button class="btn-secondary">View Course</button>
-          </div>
+        <div>
+          <img src="Images/codex100-logo.png" alt="Team collaborating illustration" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Enhanced Footer -->
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h3>Important Links</h3>
+      <section class="services" id="services">
+        <div class="section-header">
+          <h2>Solutions Crafted for Forward-Thinking Businesses</h2>
+          <p>Choose the service that aligns with your goals. Our specialists tailor every engagement to your roadmap.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Software Development</h3>
+            <p>Full lifecycle software delivery for web, mobile, and desktop applications tailored to your business workflows.</p>
+          </article>
+          <article class="service-card">
+            <h3>Enterprise Software Development</h3>
+            <p>Design scalable, secure enterprise platforms with integration strategies that respect your existing stack.</p>
+          </article>
+          <article class="service-card">
+            <h3>Cloud Services</h3>
+            <p>Migrate, optimise, and manage workloads on leading cloud platforms to ensure resilience and cost efficiency.</p>
+          </article>
+          <article class="service-card">
+            <h3>IT Consulting</h3>
+            <p>Strategic advisory on architecture, process automation, and technology selection to reduce risk and accelerate delivery.</p>
+          </article>
+          <article class="service-card">
+            <h3>Application Development</h3>
+            <p>Build user-centric applications with rapid prototyping, iterative testing, and deployment best practices.</p>
+          </article>
+          <article class="service-card">
+            <h3>Business to Business Solutions</h3>
+            <p>Strengthen partner ecosystems with secure portals, data exchanges, and automation between vendors.</p>
+          </article>
+          <article class="service-card">
+            <h3>Networking &amp; IoT Development</h3>
+            <p>Connect devices and insights with resilient IoT solutions, secure networking, and real-time analytics pipelines.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website &amp; ERP Development</h3>
+            <p>Craft high-performance websites and ERP platforms that centralise operations and elevate digital presence.</p>
+          </article>
+          <article class="service-card">
+            <h3>AI Automation for Marketing</h3>
+            <p>Deploy AI-driven campaigns, lead scoring, and customer journeys that operate around the clock.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="schedule-info" id="schedule">
+        <article class="schedule-card">
+          <h3>Meeting Availability</h3>
           <ul>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Service</a></li>
+            <li><strong>Days:</strong> Monday to Friday</li>
+            <li><strong>Hours:</strong> 10:00 AM – 4:00 PM (GMT)</li>
+            <li><strong>Support:</strong> Our experts monitor services 24/7</li>
           </ul>
+        </article>
+        <article class="schedule-card">
+          <h3>What to Expect</h3>
+          <ul>
+            <li>Discovery of your requirements and current architecture</li>
+            <li>Recommendations tailored to your business priorities</li>
+            <li>Next steps with estimates and resource plans</li>
+          </ul>
+        </article>
+        <article class="schedule-card">
+          <h3>Meeting Formats</h3>
+          <ul>
+            <li>Video call via your preferred platform</li>
+            <li>Phone consultation</li>
+            <li>On-site sessions (upon request)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="appointment-section" id="appointment">
+        <div class="section-header">
+          <h2>Book Your Appointment</h2>
+          <p>Fill out the form below. A confirmation will be emailed to our team instantly and a PDF summary will be generated for you.</p>
         </div>
-        <div class="footer-section">
-          <h3>Connect With Us</h3>
-          <div class="social-icons">
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon youtube">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
+        <div class="appointment-grid">
+          <form id="appointment-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="client-name">Full Name <span class="badge">Required</span></label>
+                <input type="text" id="client-name" name="clientName" placeholder="Jane Doe" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="client-email">Business Email <span class="badge">Required</span></label>
+                <input type="email" id="client-email" name="clientEmail" placeholder="you@company.com" autocomplete="email" required />
+              </div>
+              <div class="form-group">
+                <label for="client-phone">Mobile Number <span class="badge">Required</span></label>
+                <input type="tel" id="client-phone" name="clientPhone" placeholder="Include country code" autocomplete="tel" required />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed <span class="badge">Required</span></label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>Application Development</option>
+                  <option>Business to Business</option>
+                  <option>Cloud Services</option>
+                  <option>Enterprise Software Development</option>
+                  <option>ERP Software Development</option>
+                  <option>IT Consulting</option>
+                  <option>IoT Development</option>
+                  <option>Networking</option>
+                  <option>Software Development</option>
+                  <option>Website Development</option>
+                  <option>AI Automation for Marketing</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="appointment-date">Preferred Date <span class="badge">Weekdays Only</span></label>
+                <input type="date" id="appointment-date" name="appointmentDate" required />
+              </div>
+              <div class="form-group">
+                <label for="appointment-time">Preferred Time <span class="badge">10:00 – 16:00</span></label>
+                <input type="time" id="appointment-time" name="appointmentTime" min="10:00" max="16:00" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="project-notes">Project Notes (optional)</label>
+              <textarea id="project-notes" name="projectNotes" placeholder="Tell us about your objectives, timeline, and stakeholders."></textarea>
+            </div>
+            <button type="submit" class="submit-button">
+              <i class="fas fa-paper-plane"></i>
+              Submit &amp; Confirm
+            </button>
+            <div id="form-status" role="alert" aria-live="polite"></div>
+          </form>
+          <aside class="contact-card" id="contact">
+            <h3>Need help before booking?</h3>
+            <p>Email our coordination team anytime:</p>
+            <p><a href="mailto:redwingsstech@gmail.com">redwingsstech@gmail.com</a></p>
+            <p>We respond rapidly and can help you scope services, confirm slots, or handle urgent requests.</p>
+            <p class="badge"><i class="fas fa-clock"></i> Always-on monitoring with meeting slots Mon–Fri, 10:00-16:00.</p>
+          </aside>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 codeX100. All rights reserved.</p>
-      </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Red Wingss Techverse. All rights reserved.</p>
+      <p>Enterprise-ready software development, consulting, and automation.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-8PR1F1qm3CB2A+qsSVqS+8CA0nVddOZXS6jttuPAHyBs+K6TfGsDz3jHK5vVsQt1zAr72Xd1LSeX776BFqeR9A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
