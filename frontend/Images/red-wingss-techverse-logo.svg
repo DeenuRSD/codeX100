@@ -1,0 +1,20 @@
+<svg width="600" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Red Wingss Techverse logo</title>
+  <desc id="desc">Stylised Red Wingss Techverse logotype with wing accent</desc>
+  <defs>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c10c1a" />
+      <stop offset="60%" stop-color="#ef3b2d" />
+      <stop offset="100%" stop-color="#611f99" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="white" rx="24" />
+  <g font-family="'Poppins', 'Helvetica Neue', Arial, sans-serif" font-weight="700">
+    <text x="40" y="120" font-size="110" fill="#d9001a">RED</text>
+    <text x="240" y="120" font-size="110" fill="#163d96">WINGSS</text>
+  </g>
+  <path d="M365 50 L560 15 L510 75 L560 135 L365 95 Z" fill="url(#wingGradient)" opacity="0.9" />
+  <g font-family="'Poppins', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="42" letter-spacing="8" fill="#0a2b6c">
+    <text x="65" y="185">TECHVERSE</text>
+  </g>
+</svg>

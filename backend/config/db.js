@@ -4,12 +4,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const connectDB = async () => {
-  try {
-    const uri = process.env.DB_URI; // Use DB_URI instead of MONGODB_URI
-    if (!uri) {
-      throw new Error('DB_URI is not defined in .env file');
-    }
+  const uri = process.env.DB_URI; // Use DB_URI instead of MONGODB_URI
 
+  if (!uri) {
+    console.warn('DB_URI is not defined. MongoDB connection skipped.');
+    return;
+  }
+
+  try {
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
